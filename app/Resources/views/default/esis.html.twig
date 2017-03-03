@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="blue">
+        test 1
+    </div>
+    <p>&nbsp;</p>
+      {{ render(controller('AppBundle:Default:esi', {'twig' : 'default/fichier_exemple.html.twig'})) }}
+{% endblock %}
